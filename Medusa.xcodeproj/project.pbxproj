@@ -10,6 +10,10 @@
 		4E90FF3220C6D3FD000E24D0 /* Medusa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E90FF2820C6D3FC000E24D0 /* Medusa.framework */; };
 		4E90FF3720C6D3FD000E24D0 /* MedusaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E90FF3620C6D3FD000E24D0 /* MedusaTests.swift */; };
 		4E90FF3920C6D3FD000E24D0 /* Medusa.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E90FF2B20C6D3FC000E24D0 /* Medusa.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E90FF4520C6DEA2000E24D0 /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E90FF4420C6DEA2000E24D0 /* EndPointType.swift */; };
+		4E90FF4820C6E29E000E24D0 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E90FF4720C6E29E000E24D0 /* ParameterEncoding.swift */; };
+		4E90FF4B20C6E41D000E24D0 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E90FF4A20C6E41D000E24D0 /* NetworkError.swift */; };
+		4E90FF4D20C6E490000E24D0 /* URLParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E90FF4C20C6E490000E24D0 /* URLParameterEncoder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,10 @@
 		4E90FF3120C6D3FD000E24D0 /* MedusaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MedusaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E90FF3620C6D3FD000E24D0 /* MedusaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedusaTests.swift; sourceTree = "<group>"; };
 		4E90FF3820C6D3FD000E24D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E90FF4420C6DEA2000E24D0 /* EndPointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
+		4E90FF4720C6E29E000E24D0 /* ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		4E90FF4A20C6E41D000E24D0 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		4E90FF4C20C6E490000E24D0 /* URLParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLParameterEncoder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +98,8 @@
 		4E90FF4220C6D43A000E24D0 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				4E90FF4920C6E406000E24D0 /* Error */,
+				4E90FF4620C6E063000E24D0 /* Encoding */,
 				4E90FF4320C6D63E000E24D0 /* Endpoint */,
 			);
 			path = Network;
@@ -98,8 +108,26 @@
 		4E90FF4320C6D63E000E24D0 /* Endpoint */ = {
 			isa = PBXGroup;
 			children = (
+				4E90FF4420C6DEA2000E24D0 /* EndPointType.swift */,
 			);
 			path = Endpoint;
+			sourceTree = "<group>";
+		};
+		4E90FF4620C6E063000E24D0 /* Encoding */ = {
+			isa = PBXGroup;
+			children = (
+				4E90FF4720C6E29E000E24D0 /* ParameterEncoding.swift */,
+				4E90FF4C20C6E490000E24D0 /* URLParameterEncoder.swift */,
+			);
+			path = Encoding;
+			sourceTree = "<group>";
+		};
+		4E90FF4920C6E406000E24D0 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				4E90FF4A20C6E41D000E24D0 /* NetworkError.swift */,
+			);
+			path = Error;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +192,7 @@
 				TargetAttributes = {
 					4E90FF2720C6D3FC000E24D0 = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 0940;
 					};
 					4E90FF3020C6D3FD000E24D0 = {
 						CreatedOnToolsVersion = 9.4;
@@ -210,6 +239,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E90FF4D20C6E490000E24D0 /* URLParameterEncoder.swift in Sources */,
+				4E90FF4B20C6E41D000E24D0 /* NetworkError.swift in Sources */,
+				4E90FF4820C6E29E000E24D0 /* ParameterEncoding.swift in Sources */,
+				4E90FF4520C6DEA2000E24D0 /* EndPointType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +388,7 @@
 		4E90FF3D20C6D3FD000E24D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -372,6 +406,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = nomoremierdas.Medusa;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -380,6 +415,7 @@
 		4E90FF3E20C6D3FD000E24D0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -405,6 +441,7 @@
 		4E90FF4020C6D3FD000E24D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6543AJN95R;
 				INFOPLIST_FILE = MedusaTests/Info.plist;
@@ -423,6 +460,7 @@
 		4E90FF4120C6D3FD000E24D0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6543AJN95R;
 				INFOPLIST_FILE = MedusaTests/Info.plist;
