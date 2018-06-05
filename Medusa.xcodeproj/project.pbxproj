@@ -71,6 +71,7 @@
 		4E90FF2A20C6D3FC000E24D0 /* Medusa */ = {
 			isa = PBXGroup;
 			children = (
+				4E90FF4220C6D43A000E24D0 /* Network */,
 				4E90FF2B20C6D3FC000E24D0 /* Medusa.h */,
 				4E90FF2C20C6D3FC000E24D0 /* Info.plist */,
 			);
@@ -84,6 +85,21 @@
 				4E90FF3820C6D3FD000E24D0 /* Info.plist */,
 			);
 			path = MedusaTests;
+			sourceTree = "<group>";
+		};
+		4E90FF4220C6D43A000E24D0 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4E90FF4320C6D63E000E24D0 /* Endpoint */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		4E90FF4320C6D63E000E24D0 /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Endpoint;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
