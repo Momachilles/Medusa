@@ -16,6 +16,7 @@
 		4E90FF4D20C6E490000E24D0 /* URLParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E90FF4C20C6E490000E24D0 /* URLParameterEncoder.swift */; };
 		4E90FF4F20C7C3CA000E24D0 /* JSONParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E90FF4E20C7C3CA000E24D0 /* JSONParameterEncoder.swift */; };
 		4E90FF5220C7CCCC000E24D0 /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E90FF5120C7CCCC000E24D0 /* NetworkRouter.swift */; };
+		4E90FF6320C96E02000E24D0 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E90FF6220C96E02000E24D0 /* Router.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		4E90FF4C20C6E490000E24D0 /* URLParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLParameterEncoder.swift; sourceTree = "<group>"; };
 		4E90FF4E20C7C3CA000E24D0 /* JSONParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParameterEncoder.swift; sourceTree = "<group>"; };
 		4E90FF5120C7CCCC000E24D0 /* NetworkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
+		4E90FF6220C96E02000E24D0 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				4E90FF5120C7CCCC000E24D0 /* NetworkRouter.swift */,
+				4E90FF6220C96E02000E24D0 /* Router.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 				4E90FF4F20C7C3CA000E24D0 /* JSONParameterEncoder.swift in Sources */,
 				4E90FF4D20C6E490000E24D0 /* URLParameterEncoder.swift in Sources */,
 				4E90FF4B20C6E41D000E24D0 /* NetworkError.swift in Sources */,
+				4E90FF6320C96E02000E24D0 /* Router.swift in Sources */,
 				4E90FF4820C6E29E000E24D0 /* ParameterEncoding.swift in Sources */,
 				4E90FF4520C6DEA2000E24D0 /* EndPointType.swift in Sources */,
 				4E90FF5220C7CCCC000E24D0 /* NetworkRouter.swift in Sources */,
