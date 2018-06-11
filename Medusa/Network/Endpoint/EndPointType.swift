@@ -14,10 +14,15 @@ public enum HTTPMethod: String {
     case delete = "DELETE"
 }
 
+public enum HTTPEncoder {
+    case json
+    case url
+}
+
 public enum HTTPTask {
     case request
-    case requestParameters(bodyParameters: Parameters?, urlParameters: Parameters?)
-    case requestParametersAndHeaders(bodyParameters: Parameters?, urlParameters: Parameters?, additionalHeaders: HTTPHeaders?)
+    case requestParameters(bodyParameters: Parameters?, urlParameters: Parameters?, encoder: HTTPEncoder)
+    case requestParametersAndHeaders(bodyParameters: Parameters?, urlParameters: Parameters?, additionalHeaders: HTTPHeaders?, encoder: HTTPEncoder)
 }
 
 public typealias HTTPHeaders = [String:String]
