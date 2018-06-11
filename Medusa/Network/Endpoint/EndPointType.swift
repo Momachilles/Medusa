@@ -27,7 +27,7 @@ public enum HTTPTask {
 
 public typealias HTTPHeaders = [String:String]
 
-protocol EndPointType {
+public protocol EndPointType {
     var baseURL: URL { get }
     var path: String { get }
     var httpMethod: HTTPMethod { get }

@@ -16,6 +16,8 @@
 		4E350F7420CE9BE200033139 /* MedusaExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E350F7320CE9BE200033139 /* MedusaExampleUITests.swift */; };
 		4E350F8220CE9C0900033139 /* Medusa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E350F8120CE9C0900033139 /* Medusa.framework */; };
 		4E350F8320CE9C0900033139 /* Medusa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4E350F8120CE9C0900033139 /* Medusa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4E350F8820CEA12B00033139 /* MovieApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E350F8720CEA12B00033139 /* MovieApi.swift */; };
+		4E350F8D20CEA6F800033139 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E350F8C20CEA6F800033139 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 		4E350F7320CE9BE200033139 /* MedusaExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedusaExampleUITests.swift; sourceTree = "<group>"; };
 		4E350F7520CE9BE200033139 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E350F8120CE9C0900033139 /* Medusa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Medusa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E350F8720CEA12B00033139 /* MovieApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieApi.swift; sourceTree = "<group>"; };
+		4E350F8C20CEA6F800033139 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,7 @@
 		4E350F5220CE9BE100033139 /* MedusaExample */ = {
 			isa = PBXGroup;
 			children = (
+				4E350F8620CEA11500033139 /* Network */,
 				4E350F5320CE9BE100033139 /* AppDelegate.swift */,
 				4E350F5520CE9BE100033139 /* ViewController.swift */,
 				4E350F5720CE9BE100033139 /* Main.storyboard */,
@@ -142,6 +147,39 @@
 				4E350F7520CE9BE200033139 /* Info.plist */,
 			);
 			path = MedusaExampleUITests;
+			sourceTree = "<group>";
+		};
+		4E350F8620CEA11500033139 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4E350F8B20CEA6C000033139 /* Manager */,
+				4E350F8A20CEA6B000033139 /* Model */,
+				4E350F8920CEA69600033139 /* Endpoint */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		4E350F8920CEA69600033139 /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				4E350F8720CEA12B00033139 /* MovieApi.swift */,
+			);
+			path = Endpoint;
+			sourceTree = "<group>";
+		};
+		4E350F8A20CEA6B000033139 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4E350F8B20CEA6C000033139 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				4E350F8C20CEA6F800033139 /* NetworkManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,7 +314,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E350F8D20CEA6F800033139 /* NetworkManager.swift in Sources */,
 				4E350F5620CE9BE100033139 /* ViewController.swift in Sources */,
+				4E350F8820CEA12B00033139 /* MovieApi.swift in Sources */,
 				4E350F5420CE9BE100033139 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
