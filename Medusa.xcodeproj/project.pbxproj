@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E4C2C0F20CFA82F00C3B2D8 /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4C2C0E20CFA82F00C3B2D8 /* NetworkLogger.swift */; };
 		4E90FF3220C6D3FD000E24D0 /* Medusa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E90FF2820C6D3FC000E24D0 /* Medusa.framework */; };
 		4E90FF3720C6D3FD000E24D0 /* MedusaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E90FF3620C6D3FD000E24D0 /* MedusaTests.swift */; };
 		4E90FF3920C6D3FD000E24D0 /* Medusa.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E90FF2B20C6D3FC000E24D0 /* Medusa.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -30,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E4C2C0E20CFA82F00C3B2D8 /* NetworkLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
 		4E90FF2820C6D3FC000E24D0 /* Medusa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Medusa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E90FF2B20C6D3FC000E24D0 /* Medusa.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Medusa.h; sourceTree = "<group>"; };
 		4E90FF2C20C6D3FC000E24D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 			children = (
 				4E90FF5120C7CCCC000E24D0 /* NetworkRouter.swift */,
 				4E90FF6220C96E02000E24D0 /* Router.swift */,
+				4E4C2C0E20CFA82F00C3B2D8 /* NetworkLogger.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E4C2C0F20CFA82F00C3B2D8 /* NetworkLogger.swift in Sources */,
 				4E90FF4F20C7C3CA000E24D0 /* JSONParameterEncoder.swift in Sources */,
 				4E90FF4D20C6E490000E24D0 /* URLParameterEncoder.swift in Sources */,
 				4E90FF4B20C6E41D000E24D0 /* NetworkError.swift in Sources */,

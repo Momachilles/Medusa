@@ -8,20 +8,24 @@
 
 import UIKit
 
-class Router<EndPoint: EndPointType>: NetworkRouter {
+public class Router<EndPoint: EndPointType>: NetworkRouter {
     private var task: URLSessionTask?
-    func request(_ route: EndPoint, completion: @escaping NetworkRouterCompletion) {
+    
+    public init() {}
+    public func request(_ route: EndPoint, completion: @escaping NetworkRouterCompletion) {
         let session = URLSession.shared
         do {
             let request = try self.buildRequest(from: route)
+            NetworkLogger.log(request: request)
             task = session.dataTask(with: request, completionHandler: { (data, response, error) in
                 completion(data, response, error)
             })
         } catch {
             completion(nil, nil, error)
         }
+        self.task?.resume()
     }
-    func cancel() {
+    public func cancel() {
         self.task?.cancel()
     }
     
